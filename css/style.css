@@ -9982,5 +9982,11 @@ h6,
   padding: 0;
   list-style-type: none;
 }
+.contact-form .help-block.err{
+  color: red !important;
+} 
+.contact-form .help-block.success{
+  color: green !important;
+} 
 
 html{scroll-behavior: smooth;}
