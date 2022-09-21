@@ -41,14 +41,14 @@ function validate() {
     }
 
     function submit(){
-        btn.click();
+        btn.click();   
     }
 
     if (nameValue.length >= 1) {
         // valid name
-        setSucess(name,"Name seems Good");
+        setSucess(name,"Name is vaid :)");
     }else{
-        setError(name,"This feild is required");
+        setError(name,"This feild is required :(");
 
     }
 
