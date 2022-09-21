@@ -9988,4 +9988,8 @@ h6,
 .contact-form .help-block.success{
   color: green !important;
 } 
+.my-project-name{
+  background-image: url(/img/edited1.png) !important;
+  z-index: -1 !important;
+}
 
