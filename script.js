@@ -13,9 +13,9 @@ function validate() {
     var messageValue = message.value.trim();
 
 
-
+//this is a virtual submit button
     var btn = document.getElementById("submit-btn-form");
-
+//flag=1 when there is an error
     var flag = 2;
     
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -69,7 +69,7 @@ function validate() {
         setError(email,"Email is required :(");
     }
 // ----------------------
-    if (subject.value.length >=1) {
+    if (subjectValue.length >=5) {
         // valid subject
         setSucess(subject,"subject Seems good")
     } else {
@@ -77,7 +77,7 @@ function validate() {
         setError(subject,"subject is required :(");
     }
 
-    if (message.value.length >=1) {
+    if (messageValue.length >=5) {
         // valid message
         setSucess(message,"message Seems good")
     } else {
