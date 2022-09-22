@@ -6,6 +6,14 @@ function validate() {
     var email = document.getElementById("email");
     var emailValue = email.value.toLowerCase().trim();
 
+    var subject = document.getElementById("subject");
+    var subjectValue = subject.value.trim();
+
+    var message = document.getElementById("message");
+    var messageValue = message.value.trim();
+
+
+
     var btn = document.getElementById("submit-btn-form");
 
     var flag = 2;
@@ -58,11 +66,36 @@ function validate() {
         setSucess(email,"Email Seems good")
     } else {
         // not a valid mail
-        setError(email,"Email not valid");
+        setError(email,"Email is required :(");
     }
+// ----------------------
+    if (subject.value.length >=1) {
+        // valid subject
+        setSucess(subject,"subject Seems good")
+    } else {
+        // not a valid subject
+        setError(subject,"subject is required :(");
+    }
+
+    if (message.value.length >=1) {
+        // valid message
+        setSucess(message,"message Seems good")
+    } else {
+        // not a valid message
+        setError(message,"message is required :(");
+    }
+
+
+
+
 
     if(flag==2){
         submit();
     }
 
 }
+
+
+
+
+
