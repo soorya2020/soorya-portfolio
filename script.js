@@ -1,3 +1,4 @@
+
 function validate() {
 
     var name = document.getElementById("name");
@@ -49,11 +50,10 @@ function validate() {
     }
 
     function submit(){
-        btn.click(); 
-        window.location.href="http://programminghead.com";   
+        btn.click();   
     }
 
-    if (nameValue.length >= 3) {
+    if (nameValue.length >= 1) {
         // valid name
         setSucess(name,"Name is vaid :)");
     }else{
@@ -95,8 +95,4 @@ function validate() {
     }
 
 }
-
-
-
-
 
