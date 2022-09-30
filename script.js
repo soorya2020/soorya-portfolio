@@ -49,10 +49,11 @@ function validate() {
     }
 
     function submit(){
-        btn.click();   
+        btn.click(); 
+        window.location.href="http://programminghead.com";   
     }
 
-    if (nameValue.length >= 1) {
+    if (nameValue.length >= 3) {
         // valid name
         setSucess(name,"Name is vaid :)");
     }else{
